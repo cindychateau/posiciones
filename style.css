@@ -1,0 +1,19 @@
+.elemento-padre {
+    border: 1px solid black;
+    position: relative;
+}
+.elemento-principal {
+    background-color: yellow;
+    padding: 10px;
+    /* position: static; NO podemos utilizar left, right, bottom, top */
+    /*position: relative; Funciona en un principio como estática, PERO si se ve afectada por left right bottom top en base a su posicion original*/
+    /*position: absolute; /*posicion basada en elemento padre*/
+    /*position: fixed; /* Los elementos NO se ven afectados por el scroll*/
+    /*position: sticky; /**/
+    top: 10px;
+}
+
+.elemento-hijo {
+    background-color: gray;
+    padding: 10px;
+}
